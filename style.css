@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: royalblue;
+    font-family: 'East Sea Dokdo', cursive;
+}
+section{
+    color:white;
+    background-color: salmon;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 5px;
+}
+.section-title{
+    color: springgreen;
+}
+main{
+    width: 900px;
+    max-width: 90%;
+    margin: 0 auto;
+   
+
+}
+.Top-player{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:30px;
+    margin-top:20px ;
+
+}
+.player{    
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 50px;
+    margin-right: 20px;
+}
+@media (max-width:992px){
+    .Top-player{
+    grid-template-columns: repeat(2,1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+     }
+       
+}
+
+@media (max-width:668px){
+    .Top-player{
+    grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.blog{
+    display:flex;
+    align-items: center;
+}
+.blogs{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 20px;
+    grid-gap: 30px;
+   
+
+}
+.thumbnail img{
+    width: 200px;
+    margin-right: 20px
+}
+
+.section-title{
+   margin-top: 20px;
+}
+.filled{
+    color: gold;
+    font-size: 13px;
+}
+.unfilled{
+    color: gray;
+    font-size: 13px;
+}
+.course-info{
+    display: flex;
+}
+.course img{
+    width: 250px;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
